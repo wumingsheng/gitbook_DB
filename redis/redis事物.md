@@ -16,6 +16,11 @@ redis没有事物回滚这么一说，因为没有事物回滚，每条命令没
 2. exec提交事物，管道里面的命令一起提交，顺序执行，能成功的就成功，不能成功的就失败，最后将结果一起返回
 3. discard放弃命令，放弃管道里面的命令不去执行，所谓的同时成功同时失败，就是靠这三个逻辑命令控制的
 
+
+
+![](/assets/20190414194019.png)
+
+
 ## 代码实例一：exec之前获取不到结果值，所有的结果值都是null,exec的时候一起返回结果值
 
 ```java
@@ -40,15 +45,29 @@ redis没有事物回滚这么一说，因为没有事物回滚，每条命令没
 
 ```java
 
-	stringRedisTemplate.setEnableTransactionSupport(true);//redis session支持事物
-	stringRedisTemplate.multi();//开始事物
-	stringRedisTemplate.opsForValue().set("key1", "value1", Duration.ofDays(1L));
-	stringRedisTemplate.opsForValue().set("key2", "value2", Duration.ofDays(1L));
-	Integer.parseInt("asd");//这里会抛出异常
-	stringRedisTemplate.opsForValue().set("key3", "value3", Duration.ofDays(1L));
-	stringRedisTemplate.opsForValue().set("key4", "value4", Duration.ofDays(1L));
-	stringRedisTemplate.opsForValue().set("key5", "value5", Duration.ofDays(1L));	
-	stringRedisTemplate.exec();//提交事物
+	log.info("say hello world ...");
+
+		List<Object> exec = stringRedisTemplate.execute(new SessionCallback<List<Object>>() {
+		
+
+			@Override
+			public List<Object> execute(RedisOperations operations) throws DataAccessException {
+				
+					stringRedisTemplate.setEnableTransactionSupport(true);
+					operations.multi();// 开启事物
+					operations.opsForValue().set("key1", "value1", Duration.ofDays(1L));
+					operations.opsForValue().set("key2", "value2", Duration.ofDays(1L));
+					operations.opsForValue().set("key2", null, Duration.ofDays(1L));//这里有问题
+					return operations.exec();
+					
+				
+			}
+
+		});
+
+		log.info("exec={}", exec);
+
+		return exec;
 
 
 ```
