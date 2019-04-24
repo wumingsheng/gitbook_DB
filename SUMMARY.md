@@ -5,5 +5,7 @@
 * [redis实战](redis/readme.md)
     * [redis事物](redis/redis事物.md)
 * [MongoDB使用](mongo/readme.md)
-    * [SpringBoot整合MongoDB](mongo/springboot-mongoTemplate.md)
+    * [SpringBoot整合MongoDB(1)](mongo/springboot-mongo-1.md)
+    * [SpringBoot整合MongoDB(2)](mongo/springboot-mongoTemplate.md)
+    * [SpringBoot整合MongoDB(3)](mongo/springboot-mongo-3.md)
 
