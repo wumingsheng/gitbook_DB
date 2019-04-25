@@ -9,8 +9,8 @@
 - 横向扩展-主从（sentinel）-备份数据，保证数据的安全不丢失
 - 纵向扩展-分布式（cluster）- 分布式（分区）存储数据，增大数据的存储能力
 
-![](img/5589.png)
-![](img/5588.png)
+![](/redis/cookbook/img/5589.png)
+![](/redis/cookbook/img/5588.png)
 
 
 
