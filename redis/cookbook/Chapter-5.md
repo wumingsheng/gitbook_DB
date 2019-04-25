@@ -10,8 +10,8 @@
 
 -----
 
-![](img/123.png)
-![](img/124.png)
+![](/redis/cookbook/img/123.png)
+![](/redis/cookbook/img/124.png)
 
 redis复制机制，使得数据能够从一个redis服务器（master，主实例）复制到一个或者多个其他的redis服务器中（slave，从实例）
 复制不仅提高了整个系统的容错能力，还可以用于对系统进行水平扩展，在一个重读取的应用中，我们可以通过增加多个redis只读从实例来减轻主实例的压力。
