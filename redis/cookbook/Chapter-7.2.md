@@ -10,6 +10,9 @@
 - 纵向扩展-分布式（cluster）- 分布式（分区）存储数据，增大数据的存储能力
 
 ![](/redis/cookbook/img/5589.png)
+
+---
+
 ![](/redis/cookbook/img/5588.png)
 
 

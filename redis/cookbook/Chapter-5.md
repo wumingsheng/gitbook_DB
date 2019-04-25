@@ -11,6 +11,9 @@
 -----
 
 ![](/redis/cookbook/img/123.png)
+
+---
+
 ![](/redis/cookbook/img/124.png)
 
 redis复制机制，使得数据能够从一个redis服务器（master，主实例）复制到一个或者多个其他的redis服务器中（slave，从实例）
