@@ -4,6 +4,8 @@
 * [分布式服务化系统一致性的“最佳实干”](分布式事物/分布式服务化系统一致性的“最佳实干”.md)
 * [redis实战](redis/readme.md)
     * [redis事物](redis/redis事物.md)
+    * [Redis4.xCookbook](cookbook/readme.md)
+        * [【Chapter-1】开始使用Redis](cookbook/Chapter-1.md)
 * [MongoDB使用](mongo/readme.md)
     * [【网易云课堂】MongoDB简介](mongo/wangyi-1.md)
     * [【网易云课堂】MongoDB基本使用](mongo/wangyi-2.md)
