@@ -20,4 +20,8 @@
     * [【第四章】MongoDB的索引介绍](mongo/book-4.md)
     * [【第五章】MongoDB的安全](mongo/book-5.md)
     * [【第六章】SpringBoot整合MongoDB](mongo/book-6.md)
+    * [【运维】stand-alone模式](mongo/oa-1.md)
+    * [【运维】set模式](mongo/oa-2.md)
+    * [【运维】shard-cluster模式](mongo/oa-3.md)
+    * [【运维】创建用户](mongo/oa-4.md)
 
