@@ -11,13 +11,13 @@
 
 https://docs.mongodb.com/manual/tutorial/deploy-sharded-cluster-hashed-sharding/index.html
 
-![](assets/深度截图_选择区域_20181218180412.png)
+![](/assets/20181218180412.png)
 
 
 
 
 
-![](assets/深度截图_选择区域_20181218180619.png)
+![](/assets/20181218180619.png)
 
 
 
