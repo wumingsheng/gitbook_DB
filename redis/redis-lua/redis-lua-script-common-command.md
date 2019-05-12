@@ -51,9 +51,50 @@ https://github.com/pkulchenko/ZeroBranePackage/blob/master/redis.lua
 
 ![](/assets/20190512131649.png)
 
+---
 
 
+![](/assets/20190512160251.png)
 
+------
+
+```lua
+local json = cjson.decode([[
+  {
+  
+  
+    "config": [
+    
+      {
+        "name": "woms",
+        "age": 123
+      },
+      {
+        "name": "wms",
+        "age": 100
+      }
+    
+    
+    ]
+  }
+]])
+local start_dbsize = redis.call("dbsize")
+local start_keys = redis.call("keys", "*")
+redis.debug("start_dbsize-------"..start_dbsize)
+redis.debug(start_keys)
+
+for i,w in ipairs(json.config) do
+  redis.call("set", "user_name:"..i, w.name)
+  redis.call("set", "user_age:"..i, w.age)
+end
+
+local end_dbsize = redis.call("dbsize")
+local end_keys = redis.call("keys", "*")
+redis.debug("end_dbsize-------"..end_dbsize)
+redis.debug(end_keys)
+
+return 
+```
 
 
 
