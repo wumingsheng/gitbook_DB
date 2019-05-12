@@ -98,6 +98,10 @@ redis.debug(end_keys)
 return 
 ```
 
+> **这个脚本在ide里面可以获取到值，也可以调试，但是不能保存数据到redis-server**
+
+
+
 
 
 
