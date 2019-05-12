@@ -10,6 +10,8 @@
     * [官方下载地址](http://luabinaries.sourceforge.net/download.html)
 * [redis中文网](http://redis.cn)
     * [redis中文网lua脚本演示教程](http://redis.cn/commands/eval.html)
+* [IDE-studio.zerobrane](https://studio.zerobrane.com/)
+    * [官方下载页面](https://studio.zerobrane.com/download?not-this-time)
 
 ## 2. 安装
 
@@ -18,5 +20,12 @@ LUA_HOME=/home/user/Downloads/lua-5.3.5_Linux319_64_bin
 PATH=$PATH:$LUA_HOME
 export PATH
 ```
+
+
+
+
+
+
+
 
 
