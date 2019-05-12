@@ -8,6 +8,7 @@
     * [redis事物](redis/redis事物.md)
     * [redis的LUA脚本编程](redis/redis-lua/redis-lua-readme.md)
         * [redis中lua脚本演示](redis/redis-lua/redis-lua-script-demonstration.md)
+        * [redis中lua常用命令](redis/redis-lua/redis-lua-script-common-command.md)
     * [Redis4.xCookbook](redis/cookbook/readme.md)
         * [【Chapter-1】开始使用Redis](redis/cookbook/Chapter-1.md)
         * [【Chapter-2】Redis数据类型](redis/cookbook/Chapter-2.md)
