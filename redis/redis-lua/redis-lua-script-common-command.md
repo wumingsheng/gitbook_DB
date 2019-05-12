@@ -54,6 +54,8 @@ https://github.com/pkulchenko/ZeroBranePackage/blob/master/redis.lua
 ---
 
 
+在ide里面执行不成功，但是可以调试
+
 ![](/assets/20190512160251.png)
 
 ------
