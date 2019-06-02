@@ -70,7 +70,7 @@ yum -y remove mysql57-community-release-el7-10.noarch
 grant all on *.* to root@'%' identified by '123456';
 ```
 
-## 安装mysql
+## 安装mycli
 
 ```bash
 # 方式一
@@ -84,6 +84,23 @@ pip install mycli
 
 
 ```
+## docker 安装 mysql
 
+
+```bash
+# pull mysql image
+docker pull mysql
+# run image
+docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql
+docker exec -it mysql /bin/bash
+mysql -uroot -p
+mysql> use mysql;
+mysql> alter user 'root'@'%' identified with mysql_native_password by '123';
+mysql> flush privileges;
+mysql> exit
+mycli -u root -h 127.0.0.1 -p 123456
+
+
+```
 
 
