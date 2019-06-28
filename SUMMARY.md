@@ -55,4 +55,5 @@
     * [【运维】set模式](mongo/oa-2.md)
     * [【运维】shard-cluster模式](mongo/oa-3.md)
     * [【运维】创建用户](mongo/oa-4.md)
+* [聊聊数据库事物处理](transaction/talk-about-db-transaction.md)
 
